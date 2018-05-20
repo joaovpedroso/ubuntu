@@ -1,0 +1,59 @@
+Comandos Apache Linux
+
+**Instalação Apache
+sudo apt-get install apache2
+
+	*Verificar se instalou corretamente
+	navegador: localhost -> "Dados do Ubuntu INFO"
+
+**Instalação do PHP
+sudo apt-get install php7.0 libapache2-mod-php7.0
+
+	*Verificar se instalou corretamente
+	php-v devera mostrar os dados do PHP Versao....
+
+**Instalação MySql
+sudo apt-get install mysql-server
+	- Senha para o mysql
+	- Repete a senha
+	- OK
+
+
+**Configurar o php e o apache para terem comunicação com o MySql
+sudo apt-get install php libapache2-mod-php php-mycrypt php-mysql
+
+**Configurar URL amigaveis
+sudo a2enmode rewrite
+
+--Reiniciar o apache apos as configurações
+sudo service apache2 restart
+
+
+**Comandos apache
+Ligar:  sudo service apache2 start
+Desligar: sudo service apache2 stop
+Reiniciar: sudo service apache2 restart
+Status: sudo service apache2 status?
+
+
+**Remoção dos serviços
+
+sudo apt-get remove apache2*
+sudo apt-get remove phpmyadmin 
+sudo apt-get remove mysql-server
+sudo apt-get remove php5
+
+ou 
+
+sudo apt-get --purge apache2*
+sudo apt-get --purge phpmyadmin 
+sudo apt-get --purge mysql-server
+sudo apt-get --purge php5
+
+
+Referências:
+https://www.youtube.com/watch?v=rwB4RNHH0Ok - Canal 
+charlesonline YouTube
+
+--- NetBeans ---
+https://www.youtube.com/watch?v=bYWVt9O47Iw
